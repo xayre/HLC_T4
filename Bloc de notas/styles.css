@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif; /*letra*/
+    margin: 10;/*margen*/
+    padding: 0;
+}
+
+header {
+    background-color: #7e7ddb;/*color*/
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.theme-selector {
+    display: flex;
+    margin-right: 20px;
+    background-color: #eee3fc;/*el color de los botones para elegir el color*/
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.container {
+    padding: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+button {
+    background-color: #ac72d3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+button:hover {
+    background-color: #8e5daf;
+}
+
+.note {
+    background-color: #ebebeb;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-note {
+    background-color: #3f94e4;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-note:hover {
+    background-color: #e63939;
+}
+
+body[data-theme='light'] {
+    background-color: #ffe4a9;
+    color: #000000;
+}
+
+body[data-theme='dark'] {
+    background-color: #1e1e1e;
+    color: #000000;
+}
+
+body[data-theme='blue'] {
+    background-color: #cce7ff;
+    color: #000000;
+}
+
+body[data-theme='pink'] {
+    background-color: #ffe6f2;
+    color: #000000;
+}
+
+body[data-theme='green'] {
+    background-color: #bff3c1;
+    color: #000000;
+}
+
+
+header[data-theme='light'] {
+    background-color: #fea500;
+}
+
+header[data-theme='dark'] {
+    background-color: #333333;
+}
+
+header[data-theme='blue'] {
+    background-color: #66aaff;
+}
+
+header[data-theme='pink'] {
+    background-color: #ff99cc;
+}
+
+header[data-theme='green'] {
+    background-color: #74c58f;
+}
+
+button[data-theme='green'] {
+    background-color: #00e1ff;
+}
